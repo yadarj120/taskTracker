@@ -42,6 +42,7 @@ const List = mongoose.model("List", listSchema);
 async function connectDB(){
   try {
     await mongoose.connect(`mongodb+srv://yadarj120:${process.env.PASSWORD}@cluster0.skmxkdd.mongodb.net/todolistDB`);
+    // await mongoose.connect("mongodb://localhost:27017/todolistDB");
     console.log("connected successfully"); 
   } 
   catch(err) {
